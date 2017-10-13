@@ -1,0 +1,22 @@
+<%- include ../partials/_header %>
+<h1>Product Creation</h1>
+
+<form method="post" action="/products/create" enctype="multipart/form-data"> 
+	<div>
+		<label>Title</label> <input type='text' placeholder='title' name='title' /> 
+	</div>
+	<div>
+		<label>Price</label> <input type='number' placeholder='price' name='price' /> 
+	</div>
+	<div>
+		<label>Quantity</label> <input type='number' placeholder='quantity' name='quantity' /> 
+	</div>
+	<div>
+		<label>Image</label> <input name='productImage' type='file'  /> 
+	</div>
+	<div>
+		<button type='submit'>Upload</button> 
+	</div> 
+</form> 
+
+<%- include ../partials/_footer %>
